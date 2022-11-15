@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="header">
@@ -20,8 +23,9 @@
         <a href="index.html"
           ><img src="images/logo.png" alt="College logo" loading="lazy"
         /></a>
-        <div class="nav-links">
-        <i class="fa fa-times"></i>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -30,16 +34,82 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars"></i>
 
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <div class="text-box">
         <h1>World's Best University</h1>
-        <p> Eduford University offers qualified undergraduates the opportunity to complete an undergraduate degree and a graduate degree with five to six years depending on the degree program.</p>
+        <p>
+          Eduford University offers qualified undergraduates the opportunity to
+          complete an undergraduate degree and a graduate degree with five to
+          six years depending on the degree program.
+        </p>
         <button class="hero-btn"><a href="">Visit Us To Know More</a></button>
       </div>
     </section>
+
+    <!-- COURSE -->
+
+    <section class="course">
+      <h1>Courses We offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuemqu.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto delectus harum rerum ipsam, velit labore perspiciatis nostrum impedit error expedita voluptate repellat tempora veritatis, deleniti nam dolorem doloribus minus. Animi!</p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto delectus harum rerum ipsam, velit labore perspiciatis nostrum impedit error expedita voluptate repellat tempora veritatis, deleniti nam dolorem doloribus minus. Animi!</p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto delectus harum rerum ipsam, velit labore perspiciatis nostrum impedit error expedita voluptate repellat tempora veritatis, deleniti nam dolorem doloribus minus. Animi!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------Campus------ -->
+    <section class="campus">
+      <h1>Our Global Camous</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuemqu</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png">
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png">
+          <div class="layer">
+            <h3>NEWYORK</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png">
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
 
